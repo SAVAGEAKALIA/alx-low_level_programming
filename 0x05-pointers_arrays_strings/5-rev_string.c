@@ -1,10 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
-*rev_sting - swap and print in reverse
-*@begin: Data type
-*@end: data type
-*@char: data type
+*rev_string - swap and print in reverse
+*@s: data type
+*
+*
 */
 
 void rev_string(char *s)
