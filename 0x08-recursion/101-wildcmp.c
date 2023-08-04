@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 /**
  * wildcmp - Compare strings
  * @s1: pointer to string params
