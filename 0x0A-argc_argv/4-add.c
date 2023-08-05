@@ -14,13 +14,12 @@ int main(int argc, char *argv[])
 {
 	int x, result = 0;
 
+	for (x = 1; x < argc; x++)
+{
 	if (argc < 2)
 {
 	printf("%d\n", 0);
 }
-
-	for (x = 1; x < argc; x++)
-{
 
 	else if (!isdigit(*argv[x]))
 {
