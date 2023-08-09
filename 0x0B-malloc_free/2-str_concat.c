@@ -24,8 +24,8 @@ char *str_concat(char *s1, char *s2)
 	return ("");
 	}
 
-	s1_length = strlen(s1);
-	s2_length = strlen(s2);
+	s1_length = (s1 == NULL) ? 0 :strlen(s1);
+	s2_length = (s2 == NULL) ? 0 :strlen(s2);
 	size = s1_length + s2_length + 1;
 
 	s = (char *)malloc(sizeof(char) * size);
