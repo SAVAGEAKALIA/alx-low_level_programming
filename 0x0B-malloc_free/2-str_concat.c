@@ -21,10 +21,15 @@ char *str_concat(char *s1, char *s2)
 	return (NULL);
 	}
 	for (i = 0; i < s1_length; i++)
+{
 	s[i] = s1[i];
-
+}
 	for (i = 0; i < s2_length; i++)
+{
 	s[s1_length + i] = s2[i];
+}
+
+	s[s1_length + s2_length] = '\0';
 
 	return (s);
 }
