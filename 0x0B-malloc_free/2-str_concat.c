@@ -11,21 +11,12 @@
 char *str_concat(char *s1, char *s2)
 {
 
-	int s1_length, s2_length, size;
+	int i, s1_length, s2_length, size;
 	char *s;
 
-	if (s1 == NULL)
-	{
-	return ("");
-	}
+	s1_length = (s1 == NULL) ? 0 : strlen(s1);
+	s2_length = (s2 == NULL) ? 0 : strlen(s2);
 
-	if (s2 == NULL)
-	{
-	return ("");
-	}
-
-	s1_length = (s1 == NULL) ? 0 :strlen(s1);
-	s2_length = (s2 == NULL) ? 0 :strlen(s2);
 	size = s1_length + s2_length + 1;
 
 	s = (char *)malloc(sizeof(char) * size);
@@ -35,11 +26,13 @@ char *str_concat(char *s1, char *s2)
 	return (NULL);
 	}
 
-	if (s1 != NULL)
-	strcpy(s, s1);
+	for (i = 0; i < s1_length; i++)
+	s[i] = s1[i];
 
-	if (s2 != NULL)
-	strcat(s, s2);
+	for (i = 0; i < s2_length; i++)
+	s[s1_length + i] = s2[i];
+
+	s[s1_length + s2_length] = '\0';
 
 	return (s);
 }
