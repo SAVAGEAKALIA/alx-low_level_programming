@@ -31,11 +31,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 	result[i] = s1[i];
 	}
+	
+	
 
+	if (i < n)
+{
 	for (i = 0; i < n && s2[i] != '\0'; i++)
 	{
 	result[s1_lenght + i] = s2[i];
 	}
+}
+
+
+
+	for (i = 0; i < s2_lenght && s2[i] != '\0'; i++)
+	{
+	result[s1_lenght + i] = s2[i];
+	}
+
 
 	result[s1_lenght + i] = '\0';
 
