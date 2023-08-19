@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
-#include <string,h>
+#include <string.h>
 
 /**
   *print_all - print the program similar to printf
@@ -51,4 +51,5 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(list);
+}
 }
