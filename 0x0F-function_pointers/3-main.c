@@ -10,16 +10,18 @@
 
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	char *operator = argv[2];
-	int num2 = atoi(argv[3]);
-	int calc = 0;
+	int num1, num2, calc = 0;
+	char *operator;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+	num1 = atoi(argv[1]);
+	operator = argv[2];
+	num2 = atoi(argv[3]);
 
 	if (get_op_func(operator) == NULL || operator[1] != '\0')
 	{
