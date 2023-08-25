@@ -1,24 +1,24 @@
 #include "lists.h"
 /**
-  *
-  *
-  *
-  *
+  **add_node_end - Adds a new node at the beginning of a linked list.
+  *@head: Pointer to a pointer
+  *@str: String to be duplicated
+  *Return: Pointer to the new node, or NULL on failure.
   */
 
 
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
-	char *duplicate;
+	char *dup;
 
 	new_node = *head;
 
 	if (str == NULL)
 		return (NULL);
 
-	duplicate = strdup(str);
-	if(duplicate == NULL)
+	dup = strdup(str);
+	if (dup == NULL)
 		return (NULL);
 
 	new_node = malloc(sizeof(list_t));
@@ -29,8 +29,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node->str = duplicate;
-	new_node->len = strlen(duplicate);
+	new_node->str = dup;
+	new_node->len = strlen(dup);
 	new_node->next = *head;
 
 	*head = new_node;
