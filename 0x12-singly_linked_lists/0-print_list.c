@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 			}
 			else
 			{
-			printf("[%d] %s", string->len, string->str);
+			printf("[%u] %s", string->len, string->str);
 			}
 
 			string = string->next;/*moves to the next node*/
