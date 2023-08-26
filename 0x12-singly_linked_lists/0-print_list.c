@@ -22,9 +22,9 @@ size_t print_list(const list_t *h)
 		else
 		{
 			printf("[%d] %s", string->len, string->str);
-		}
-		string = string->next;
-		n++;
+		}		
+			string = string->next;
+			n++;
 
 		printf("\n");
 	}
