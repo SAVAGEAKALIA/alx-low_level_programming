@@ -2,7 +2,7 @@
 /**
   *listint_len - count number of element
   *@h: pointer to struct
-  *Return: number of element only
+  *Return: number of element only back to program
   */
 
 size_t listint_len(const listint_t *h)
