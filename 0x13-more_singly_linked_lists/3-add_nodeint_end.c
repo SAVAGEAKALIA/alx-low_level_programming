@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
-  *
-  *
-  *
+  *add_nodeint_end - add node to the end of the lis
+  *@head: head pointer to node
+  *@n: variable in node
+  *Return: address of last node
   */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -16,7 +17,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	
+
 	end_node->n = n;
 	end_node->next = NULL;
 
