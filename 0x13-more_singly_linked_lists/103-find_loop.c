@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * find_listint_loop - finds loop in linked list
- * @head: linked list to search 
+ * @head: linked list to search
  * Return: address of the node or NULL
  */
 
@@ -29,6 +29,5 @@ listint_t *find_listint_loop(listint_t *head)
 		}
 	}
 
-	
 	return (NULL);
 }
