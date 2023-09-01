@@ -25,14 +25,14 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	while (i < index - 1)
 	{
-		if (!delete || !(delet->next))
+		if (!delete || !(delete->next))
 			return (-1);
-		temp = temp->next;
+		delete = delete->next;
 		i++;
 	}
 
 
-	next_node = temp->next;
+	next_node = delete->next;
 	delete->next = next_node->next;
 	free(next_node);
 
