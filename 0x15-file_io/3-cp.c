@@ -13,7 +13,7 @@ void close_file(int file);
  */
 char *create_buffer(char *file)
 {
-	char *buf;
+	char *buff;
 
 	buff = malloc(sizeof(char) * 1024);
 
@@ -35,7 +35,7 @@ void close_file(int file)
 {
 	int clo;
 
-	clo = close(fd);
+	clo = close(file);
 
 	if (clo == -1)
 	{
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		writef = write(to, buff, r);
+		writef = write(to, buff, readf);
 		if (to == -1 || writef == -1)
 		{
 			dprintf(STDERR_FILENO,
