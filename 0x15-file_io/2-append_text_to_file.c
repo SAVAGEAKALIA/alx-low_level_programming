@@ -17,8 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (size = 0; text_content[size];)
-			size++;
+		size = strlen(text_content);
 	}
 
 	writeonly = open(filename, O_WRONLY | O_APPEND);
