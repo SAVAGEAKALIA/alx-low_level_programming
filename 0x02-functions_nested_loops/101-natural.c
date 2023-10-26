@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
   *main - program that prints sum mulitple
   */
 
-void main(void)
+int main(void)
 {
 	int result;
 	int j = 0, n = 1024;
@@ -21,4 +22,6 @@ void main(void)
 		}
 	}
 	printf("%d\n", result);
+
+	return (0);
 }
