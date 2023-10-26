@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
   *main - program that prints sum mulitple
+  *Return: 0 on Success
   */
 
 int main(void)
