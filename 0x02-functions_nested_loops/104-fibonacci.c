@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	int nth_term = 0;
-	int t1 = 0, t2 = 1;
-	int n;
+	size_t nth_term = 0;
+	size_t t1 = 0, t2 = 1;
+	size_t n;
 
 
 	nth_term = t1 + t2;
