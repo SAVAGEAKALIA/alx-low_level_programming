@@ -15,9 +15,9 @@ int main(void)
 	size_t n;
 
 
-	printf("%lu, %lu", t1,t2);
+	printf("%lu, %lu", t1, t2);
 
-	for (n = 2; n <= 98; n++)
+	for (n = 5; n <= 98; n++)
 	{
 		nth_term = t1 + t2;
 		printf(", %lu", nth_term);
