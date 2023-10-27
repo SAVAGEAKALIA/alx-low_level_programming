@@ -24,6 +24,6 @@ int main(void)
 		t1 = t2;
 		t2 = nth_term;
 	}
-	/*printf("\n");*/
+	printf("\n");
 	return (0);
 }
