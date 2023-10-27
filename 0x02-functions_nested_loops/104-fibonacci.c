@@ -15,12 +15,12 @@ int main(void)
 	unsigned long n;
 
 
-	printf("%d, %d", t1, t2);
+	printf("%lu, %lu", t1, t2);
 
-	for (n = 2; n < 90; n++)
+	for (n = 2; n < 100; n++)
 	{
 		nth_term = t1 + t2;
-		printf(", %d", nth_term);
+		printf(", %lu", nth_term);
 		t1 = t2;
 		t2 = nth_term;
 	}
