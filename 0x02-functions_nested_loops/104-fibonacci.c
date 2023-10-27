@@ -17,7 +17,7 @@ int main(void)
 
 	printf("%d, %d", t1, t2);
 
-	for (n = 3; n < 98; n++)
+	for (n = 3; n <= 98; n++)
 	{
 		nth_term = t1 + t2;
 		printf(", %d", nth_term);
