@@ -16,10 +16,10 @@ int main(void)
 
 	nth_term = t1 + t2;
 
-	for (n = 0, n <= 50, n++)
+	for (n = 0; n <= 50, n++)
 	{
 		t1 = t2;
-		t2 = nth_term
+		t2 = nth_term;
 		nth_term = t1 + t2;
 		printf(", %d", nth_term);
 	}

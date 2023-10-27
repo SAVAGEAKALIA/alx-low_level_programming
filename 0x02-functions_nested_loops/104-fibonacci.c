@@ -27,5 +27,5 @@ int main(void)
 		printf(", %d", nth_term);
 	}
 	printf("\n");
-	return (0)
+	return (0);
 }

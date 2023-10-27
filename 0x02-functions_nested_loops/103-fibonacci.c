@@ -17,7 +17,7 @@ int main(void)
 
 	for (n = 0; nth_term <= 4000000; n++)
 	{
-		if ((result / 2) && ((result % 2) == 0))
+		if ((nth_term / 2) && ((nth_term % 2) == 0))
 		{
 			sum += nth_term;
 		}
