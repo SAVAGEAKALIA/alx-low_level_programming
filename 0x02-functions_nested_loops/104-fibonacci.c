@@ -15,16 +15,14 @@ int main(void)
 	size_t n;
 
 
-	nth_term = t1 + t2;
+	printf("%lu, %lu", t1,t2);
 
-	printf("%lu", t2);
-
-	for (n = 10; n <= 96; n++)
+	for (n = 2; n <= 98; n++)
 	{
-		t1 = t2;
-		t2 = nth_term;
 		nth_term = t1 + t2;
 		printf(", %lu", nth_term);
+		t1 = t2;
+		t2 = nth_term;
 	}
 	printf("\n");
 	return (0);
