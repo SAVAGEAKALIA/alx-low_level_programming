@@ -8,11 +8,11 @@
 
 int main(void)
 {
-	int nth_term = 0;
-	int t1 = 0, t2 = 1;
-	int n = 0;
+	size_t nth_term = 0;
+	size_t t1 = 0, t2 = 1;
+	size_t n = 0;
 
-	printf("%d", t2);
+	printf("%lu", t2);
 
 	nth_term = t1 + t2;
 
