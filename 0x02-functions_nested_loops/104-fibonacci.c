@@ -17,7 +17,7 @@ int main(void)
 
 	nth_term = t1 + t2;
 
-	printf("%d", t2);
+	printf("%lu", t2);
 
 	for (n = 3; n <= 98; n++)
 	{
