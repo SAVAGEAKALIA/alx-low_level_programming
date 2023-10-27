@@ -19,7 +19,7 @@ int main(void)
 
 	printf("%lu", t2);
 
-	for (n = 9; n <= 98; n++)
+	for (n = 0; n <= 98; n++)
 	{
 		t1 = t2;
 		t2 = nth_term;
