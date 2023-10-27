@@ -11,7 +11,7 @@
 int main(void)
 {
 	int nth_term = 0;
-	int t1 = 0, t2 = 1;
+	int t1 = 1, t2 = 2;
 	int n;
 
 
