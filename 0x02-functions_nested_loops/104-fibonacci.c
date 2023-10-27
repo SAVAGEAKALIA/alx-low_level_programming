@@ -24,7 +24,7 @@ int main(void)
 		t1 = t2;
 		t2 = nth_term;
 		nth_term = t1 + t2;
-		printf(", %d", nth_term);
+		printf(", %lu", nth_term);
 	}
 	printf("\n");
 	return (0);
