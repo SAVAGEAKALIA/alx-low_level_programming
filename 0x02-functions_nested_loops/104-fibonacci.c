@@ -15,7 +15,7 @@ int main(void)
 	int n;
 
 
-	printf("%d, %lu", t1, t2);
+	printf("%d, %d", t1, t2);
 
 	for (n = 2; n <= 98; n++)
 	{
