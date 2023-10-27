@@ -16,7 +16,7 @@ int main(void)
 
 	nth_term = t1 + t2;
 
-	for (n = 3; n <= 50; n++)
+	for (n = 1; n <= 50; n++)
 	{
 		t1 = t2;
 		t2 = nth_term;
