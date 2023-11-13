@@ -1,30 +1,31 @@
 #include "lists.h"
 /**
- *add_dnodeint - add node to list
- *@n: data for n
+ *add_dnodeint- add node in sequenc last = first
  *@head: head node
- *Return: newnode
+ *@n: data value to add
+ *Return: current node on success
  */
+
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *newnode = malloc(sizeof(dlistint_t));
+	dlistint_t *current = malloc(sizeof(dlistint_t));
 
-	if (newnode == NULL)
+	if (current == NULL)
 	{
 		return (NULL);
 	}
 
-	newnode->n = n;
-	newnode->prev = NULL;
-	newnode->next = *head;
+	current->n = n;
+	current->next = *head;
+	current->prev = NULL;
 
 	if (*head != NULL)
 	{
-		(*head)->prev = newnode;
+		(*head)->prev = current;
 	}
 
-	*head = newnode;
+	*head = current;
 
-	return (newnode);
+	return (current);
 }
