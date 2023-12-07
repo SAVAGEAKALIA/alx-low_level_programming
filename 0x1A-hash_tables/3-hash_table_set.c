@@ -6,7 +6,7 @@
  *@key: The key. It cannot be an empty string.
  *@value: The value associated with the key. It must be duplicated.
  *
- *Returns: 1 if it succeeds, 0 otherwise
+ *Return: 1 if it succeeds, 0 otherwise
  *In case of collision, adds the new node at the beginning of the list
  */
 
@@ -16,7 +16,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
-	{	return (0;)  /* Invalid input */	}
+	{	return (0);  /* Invalid input */	}
 	index = key_index((const unsigned char *)key, ht->size);
 
 	current = ht->array[index];

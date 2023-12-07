@@ -31,7 +31,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	/* Loop through each element in the array and initialize to Null*/
-	for(i = 0; i < new_table->size; i++)
+	for (i = 0; i < new_table->size; i++)
 	{
 		new_table->array[i] = NULL;
 	}
